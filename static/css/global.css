@@ -1,0 +1,30 @@
+p {
+    font-size: 18px;
+}
+
+.block-inverse-text {
+    color: #fff;
+}
+
+
+/* .block-inverse-text .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+} */
+
+.signature {
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.block-inverse-alternate {
+    background-color: #43464C;
+}
+
+.block .container .intro {
+    margin: 0 auto 60px;
+    max-width: 600px;
+}
+
+.block .container .outro {
+    margin: 60px auto 0;
+    max-width: 600px;
+}
