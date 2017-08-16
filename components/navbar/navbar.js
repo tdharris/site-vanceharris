@@ -30,15 +30,10 @@ export default class extends React.Component {
                 <Navbar.Toggle />
             </Navbar.Header>
             <Navbar.Collapse>
-                <Nav>
-                    <NavItem eventKey={1} href="#about">About</NavItem>
-                    <NavItem eventKey={2} href="#location">Our Location</NavItem>
-                    <NavItem eventKey={2} href="#contact">Contact Us</NavItem>
-                </Nav>
                 <Nav pullRight>
-                    <NavItem>
-                    <Button bsStyle="primary" bsSize="small">Intake Forms</Button>
-                    </NavItem>
+                  <NavItem eventKey={1} href="#about">About</NavItem>
+                  <NavItem eventKey={2} href="#contact">Contact Us</NavItem>
+                  <NavItem eventKey={3} href="#forms">Intake Forms</NavItem>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

@@ -5,7 +5,6 @@ import React from 'react'
 import Package from '../../package'
 import Navbar from '../navbar/navbar'
 import { Parallax } from 'react-parallax'
-import { Image } from 'react-bootstrap'
 
 import styles from './styles'
 

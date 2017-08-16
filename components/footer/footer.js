@@ -16,7 +16,7 @@ export default() => (
       </p>
     </div>
 
-    <Navbar inverse>
+    {/* <Navbar inverse>
       <Navbar.Header>
         <Navbar.Brand>
           <a href="#">Dr. <span className="signature">Vance Harris</span> M.D.</a>
@@ -32,8 +32,6 @@ export default() => (
           <Button bsStyle="primary" bsSize="small">Intake Forms</Button>
         </NavItem>
       </Nav>
-    </Navbar>
-
-
+    </Navbar> */}
   </footer>
 )

@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
 import { Parallax } from 'react-parallax'
-import styles from './styles'
 
 export default() => (
         
