@@ -29,3 +29,19 @@ p {
     margin: 60px auto 0;
     max-width: 600px;
 }
+
+.item-center {
+    margin: 0 auto;
+}
+
+.featured-list-bordered .featured-list-icon {
+    border: 1px solid #424242;
+}
+
+.padding-top {
+    padding-top: 30px;
+}
+
+.block-bg-lightGray {
+    background-color: #f6f6f6;
+}

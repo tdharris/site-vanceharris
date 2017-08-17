@@ -28,7 +28,7 @@ export default class extends React.Component {
           <Parallax bgImage='../static/img/bridges.jpg' strength={400}>
             <div className="block block-inverse block-transparent block-fill-height text-center">
               <div className="block-xs-middle">
-                <h1 className="block-title">Dr. <span className="signature">Vance Harris</span> M.D.</h1>
+                <h1 className="block-title">Dr. <span className="signature">Vance Harris</span>, M.D.</h1>
                 <h4 className="text-muted">Family practice physician in Redding, California</h4>
               </div>
             </div>

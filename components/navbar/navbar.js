@@ -30,11 +30,18 @@ export default class extends React.Component {
                 <Navbar.Toggle />
             </Navbar.Header>
             <Navbar.Collapse>
-                <Nav pullRight>
-                  <NavItem eventKey={1} href="#about">About</NavItem>
-                  <NavItem eventKey={2} href="#contact">Contact Us</NavItem>
-                  <NavItem eventKey={3} href="#forms">Intake Forms</NavItem>
-                </Nav>
+              <Nav>
+                <NavItem eventKey={1} href="#about">About</NavItem>
+                <NavItem eventKey={2} href="#contact">Contact Us</NavItem>
+              </Nav>
+              <Nav pullRight>
+                <NavItem eventKey={3}>
+                  <Button bsStyle="success" bsSize="small">
+                    <i className="glyphicon glyphicon-download-alt" />
+                    <span>   New Patient Form</span>
+                  </Button>
+                </NavItem>
+              </Nav>
             </Navbar.Collapse>
         </Navbar>
         <style jsx>{styles}</style>

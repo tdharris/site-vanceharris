@@ -27,13 +27,11 @@ export default(props) => (
             <span className="icon icon-map"> Navigate</span>
         </a>
       </Button>
-    </div>
-    <div className="row">
-      <Image src='/static/img/location-map.jpg' />
+      <Image src='/static/img/location-map.jpg' responsive className='item-center padding-top' />
     </div>
   </div>
   <style jsx>{style}</style>
 </div>
-
+ 
 )
 

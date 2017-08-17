@@ -4,7 +4,7 @@ import { Parallax } from 'react-parallax'
 
 export default() => (
         
-<div className="block block-bordered">
+<div className="block block-bg-lightGray">
     <div className="container">
         <div className="row">
             <ul className="featured-list featured-list-bordered">

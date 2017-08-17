@@ -19,11 +19,9 @@ const IndexPage = (props) => {
   return (
     <Layout>
       <Header />
-
       <About />
       <Features />
       <Contact />
-
       <style jsx>{styles}</style> 
     </Layout>
   )
