@@ -11,7 +11,7 @@ export default() => (
                 <div className="col-xs-12 col-md-4">
                     <li>
                         <div className="featured-list-icon">
-                            <i className="icon icon-user"></i>
+                            <i className="icon icon-star"></i>
                         </div> 
                         <h3>Quality</h3>
                         <p>
@@ -23,7 +23,7 @@ export default() => (
                 <div className="col-xs-12 col-md-4">
                     <li>
                         <div className="featured-list-icon">
-                            <i className="icon icon-star"></i>
+                            <i className="icon icon-user"></i>
                         </div>
                         <h3>Service</h3>
                         <p>

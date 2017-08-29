@@ -5,12 +5,13 @@ import React from 'react'
 import Package from '../../package'
 import Navbar from '../navbar/navbar'
 import { Parallax } from 'react-parallax'
+import { Button } from 'react-bootstrap'
 
 import styles from './styles'
 
 export default class extends React.Component {
 
-  render() {
+  render(props) {
 
     return (
       <header>
@@ -25,11 +26,16 @@ export default class extends React.Component {
         <div>
           <Navbar/>
 
-          <Parallax bgImage='../static/img/bridges.jpg' strength={400}>
-            <div className="block block-inverse block-transparent block-fill-height text-center">
+          <Parallax bgImage='../static/img/bridge.jpg'>
+            <div className="block block-inverse block-fill-height block-transparent block-fill-height text-center">
               <div className="block-xs-middle">
-                <h1 className="block-title">Dr. <span className="signature">Vance Harris</span>, M.D.</h1>
+                <h1 className="block-title">Dr. Vance Harris, M.D.</h1>
                 <h4 className="text-muted">Family practice physician in Redding, California</h4>
+               <br/>
+                <Button bsSize="large" bsStyle="success" className="btn-transparent-outline">
+                  <i className="icon icon-phone" />
+                  <span><a className="noTextDecoration" href="tel:5302421227"> Make an Appointment</a></span>
+                </Button>
               </div>
             </div>
           </Parallax>

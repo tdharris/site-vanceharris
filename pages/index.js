@@ -14,14 +14,42 @@ import About from '../components/blocks/about/about'
 import Features from '../components/blocks/features/features'
 import Posts from '../components/blocks/posts/posts'
 import Contact from '../components/blocks/contact/contact'
+import Text from '../components/blocks/text/text'
+import ParallaxItem from '../components/blocks/parallax-item/parallax-item'
+
+// Content
+import dataAbout from '../data/about'
+import dataMission from '../data/mission'
+import dataSummary from '../data/summary'
 
 const IndexPage = (props) => { 
   return (
     <Layout>
       <Header />
-      <About />
-      <Features />
-      <Contact />
+
+      <About 
+        id={dataAbout.id}
+        title={dataAbout.title}
+        imgUrl={dataAbout.imgUrl}
+        text={dataAbout.text}
+        quote={dataAbout.quote}
+      />
+
+      <Text 
+        id='mission'
+        title='Our Mission'
+        blockClass='block-bg-lightGray'
+        text={dataMission}
+      />
+
+      <Text
+        text={dataSummary}
+      />
+
+      <Contact 
+        blockClass='block-bordered'
+      />
+
       <style jsx>{styles}</style> 
     </Layout>
   )
