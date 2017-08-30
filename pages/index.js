@@ -11,55 +11,39 @@ import styles from './styles'
 
 import Header from '../components/header/header'
 import About from '../components/blocks/about/about'
-import Features from '../components/blocks/features/features'
-import Posts from '../components/blocks/posts/posts'
 import Contact from '../components/blocks/contact/contact'
 import Text from '../components/blocks/text/text'
-import ParallaxItem from '../components/blocks/parallax-item/parallax-item'
 
 // Content
-import dataAbout from '../data/about'
-import dataMission from '../data/mission'
-import dataSummary from '../data/summary'
+import data from '../data'
 
 const IndexPage = (props) => { 
   return (
     <Layout>
-      <Header />
 
       <About 
-        id={dataAbout.id}
-        title={dataAbout.title}
-        imgUrl={dataAbout.imgUrl}
-        text={dataAbout.text}
-        quote={dataAbout.quote}
+        {...data.about}
       />
 
       <Text 
         id='mission'
         title='Our Mission'
         blockClass='block-bg-lightGray'
-        text={dataMission}
+        text={data.mission}
       />
 
       <Text
-        text={dataSummary}
+        text={data.summary}
       />
 
       <Contact 
-        blockClass='block-bordered'
+        blockClass='block-bg-lightGray'
+        {...data.contact}
       />
 
       <style jsx>{styles}</style> 
     </Layout>
   )
-}
-
-IndexPage.getInitialProps = async ({ req }) => {
-
-  const data = {};
-  return data
-
 }
 
 export default IndexPage

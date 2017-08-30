@@ -1,5 +1,8 @@
 import React from 'react'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
+
+import contact from '../../data/contact'
+
 import styles from './styles'
 
 export default class extends React.Component {
@@ -30,11 +33,10 @@ export default class extends React.Component {
             </Navbar.Header>
              <Navbar.Collapse> 
               <Nav pullRight>
-                <NavItem eventKey={1} href="/#about">About</NavItem>
+                <NavItem eventKey={1} href="#about">About</NavItem>
                 <NavItem eventKey={2} href="#mission">Our Mission</NavItem>
-                <NavItem eventKey={3} href="#summary">About</NavItem>
                 <NavItem eventKey={4} href="#contact">Contact Us</NavItem>
-                <NavItem eventKey={4} href="#contact">
+                <NavItem eventKey={4} href={ contact.download.url }>
                   <i className="glyphicon glyphicon-download-alt" /> New Patient
                 </NavItem>
               </Nav>
