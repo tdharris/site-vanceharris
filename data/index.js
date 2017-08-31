@@ -4,8 +4,8 @@ import mission from './mission'
 import summary from './summary'
 
 export default {
-    about,
-    contact,
-    mission,
-    summary
+  about,
+  contact,
+  mission,
+  summary
 }

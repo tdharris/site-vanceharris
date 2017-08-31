@@ -3,21 +3,19 @@ import Header from '../header/header'
 import Footer from '../footer/footer'
 
 export default class extends React.Component {
-
-  static propTypes() {
+  static propTypes () {
     return {
       children: React.PropTypes.object.isRequired
     }
   }
 
-  render() {
+  render () {
     return (
       <div>
-         <Header/> 
+        <Header />
         { this.props.children }
-        <Footer/> 
+        <Footer />
       </div>
     )
   }
-
 }

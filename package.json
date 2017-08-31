@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "standard",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "npm run test && now"
   },
   "keywords": [],
   "author": "Tyler Harris <tylerdavidharris@gmail.com>",
@@ -31,7 +33,9 @@
     "sass-loader": "^6.0.6",
     "xo": "^0.18.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "standard": "^10.0.3"
+  },
   "xo": {
     "space:": 2,
     "semicolon": false,
@@ -42,5 +46,11 @@
     "ignores": [
       "next.config.js"
     ]
+  },
+  "now": {
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "alias": "vanceharris.com"
   }
 }

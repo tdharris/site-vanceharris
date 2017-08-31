@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './styles'
-import { Image } from 'react-bootstrap'
 import contact from '../../data/contact'
 
 export default() => (
@@ -22,17 +21,17 @@ export default() => (
         <div className='col-xs-12 col-sm-6 col-md-5'>
           <div className='footer-contacts'>
             <div>
-              <a href={ contact.address.url }><i className='icon icon-location' /></a>
+              <a href={contact.address.url}><i className='icon icon-location' /></a>
               <p>
-                <a href={ contact.address.url }>
+                <a href={contact.address.url}>
                   <span className='new-line-span'>{ contact.address.line1 }</span>
                   <span>{ contact.address.line2 }</span>
                 </a>
               </p>
             </div>
             <div>
-              <a href={ contact.phone.url }><i className='icon icon-phone' /></a>
-              <p><a href={ contact.phone.url }>{ contact.phone.pretty }</a></p>
+              <a href={contact.phone.url}><i className='icon icon-phone' /></a>
+              <p><a href={contact.phone.url}>{ contact.phone.pretty }</a></p>
             </div>
           </div>
         </div>
@@ -41,13 +40,13 @@ export default() => (
           <h4>{ contact.hours.title }</h4>
           {
             contact.hours.days.map((day, i) => (
-                <p key={i}>
-                  { day.dayRange }
-                  <br/>
-                  { day.timeRange }
-                  <br/>
-                  <i>{ day.note }</i>
-                </p>
+              <p key={i}>
+                { day.dayRange }
+                <br />
+                { day.timeRange }
+                <br />
+                <i>{ day.note }</i>
+              </p>
             ))
           }
         </div>

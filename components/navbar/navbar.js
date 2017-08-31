@@ -20,27 +20,27 @@ export default class extends React.Component {
       collapsed: !this.state.collapsed
     })
   }
-  
-  render() {
+
+  render () {
     return (
       <div>
         <Navbar inverse fixedTop>
-            <Navbar.Header>
-                <Navbar.Brand>
-                    <a href="#">Dr. Vance Harris, M.D.</a>
-                </Navbar.Brand>
-                 <Navbar.Toggle /> 
-            </Navbar.Header>
-             <Navbar.Collapse> 
-              <Nav pullRight>
-                <NavItem eventKey={1} href="#about">About</NavItem>
-                <NavItem eventKey={2} href="#mission">Our Mission</NavItem>
-                <NavItem eventKey={4} href="#contact">Contact Us</NavItem>
-                <NavItem eventKey={4} href={ contact.download.url }>
-                  <i className="glyphicon glyphicon-download-alt" /> New Patient
+          <Navbar.Header>
+            <Navbar.Brand>
+              <a href='#'>Dr. Vance Harris, M.D.</a>
+            </Navbar.Brand>
+            <Navbar.Toggle />
+          </Navbar.Header>
+          <Navbar.Collapse>
+            <Nav pullRight>
+              <NavItem eventKey={1} href='#about'>About</NavItem>
+              <NavItem eventKey={2} href='#mission'>Our Mission</NavItem>
+              <NavItem eventKey={4} href='#contact'>Contact Us</NavItem>
+              <NavItem eventKey={4} href={contact.download.url}>
+                <i className='glyphicon glyphicon-download-alt' /> New Patient
                 </NavItem>
-              </Nav>
-             </Navbar.Collapse> 
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
         <style jsx>{styles}</style>
       </div>
