@@ -28,6 +28,7 @@
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.1",
     "react-dom": "^15.6.1",
+    "react-ga": "^2.2.0",
     "react-parallax": "^1.4.4",
     "react-transition-group": "^1.2.0",
     "sass-loader": "^6.0.6",
