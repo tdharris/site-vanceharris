@@ -31,7 +31,7 @@ export default class extends React.Component {
               <div className="block-xs-middle">
                 <h1 className="block-title">{ contact.name }</h1>
                 <h4 className="text-muted">{ contact.tagline }</h4>
-               <br/>
+                <br/>
                 <Button bsSize="large" bsStyle="success" className="btn-transparent-outline">
                   <i className="icon icon-phone" />
                   <span><a className="noTextDecoration" href={ contact.phone.url }> Make an Appointment</a></span>

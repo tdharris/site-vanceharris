@@ -14,7 +14,7 @@ export default {
     },
     download: {
         title: "New Patient Forms",
-        url: "#"
+        url: "/static/forms/Intake.pdf"
     },
     hours: {
         title: "Hours of Operation",
