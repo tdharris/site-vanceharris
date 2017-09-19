@@ -32,9 +32,17 @@ const IndexPage = (props) => {
       />
 
       <Contact
+        id='contact'
         blockClass='block-bg-lightGray'
         {...data.contact}
-      />
+      >
+        <p>
+          Dr. Harris is now taking new patients.
+          <br />He accepts Medicare and most insurance.
+          <br />We look forward to meeting you.
+          <br /><br />
+        </p>
+      </Contact>
 
       <style jsx>{styles}</style>
     </Layout>

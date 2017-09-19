@@ -2,12 +2,12 @@ import React from 'react'
 import { Image, Button } from 'react-bootstrap'
 import style from './style'
 
-export default({children, blockClass, address, phone, download, map}) => (
+export default({children, id, blockClass, address, phone, download, map}) => (
 
-  <div className={'block text-center ' + (blockClass || '')}>
+  <div id={id} className={'block text-center ' + (blockClass || '')}>
     <div className='container'>
       <div className='row contact-block'>
-        <h2 id='contact' className='text-center'>Contact Us</h2>
+        <h2 className='text-center'>Contact Us</h2>
         <address>
           <h4>
             {address.line1}
@@ -16,6 +16,7 @@ export default({children, blockClass, address, phone, download, map}) => (
           </h4>
           <h4>{phone.pretty}</h4>
         </address>
+        { children }
         <Button bsSize='large' bsStyle='primary'>
           <a className='contact-btn' href={phone.url}>
             <span className='icon icon-phone'> Call Us</span>
@@ -35,7 +36,7 @@ export default({children, blockClass, address, phone, download, map}) => (
             <span>{' ' + download.title }</span>
           </a>
         </Button>
-        { children }
+        <br /><br />
         <Image src={address.image} responsive className='item-center padding-top' />
       </div>
     </div>

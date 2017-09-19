@@ -25,7 +25,7 @@ export default class extends React.Component {
 
           <Parallax bgImage='static/img/bridge-optimized.jpg'>
             <div className='block block-fill-height block-inverse block-transparent text-center'>
-              <div className='block-xs-middle'>
+              <div className='welcome-text block-xs-middle'>
                 <h1 className='block-title'>{ contact.name }</h1>
                 <h4 className='text-muted'>{ contact.tagline }</h4>
                 <br />
