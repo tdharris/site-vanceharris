@@ -16,7 +16,7 @@ export default class extends React.Component {
         <Head>
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <title>Vance Harris, M.D.</title>
-          <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' 
+          <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'
             integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossOrigin='anonymous' />
           <link rel='stylesheet' type='text/css' href='static/lib/bootstrap-theme-toolkit/toolkit-startup.min.css' />
           <link rel='stylesheet' type='text/css' href='static/css/global.css' />
@@ -24,7 +24,7 @@ export default class extends React.Component {
         <div>
           <Navbar />
 
-          <Parallax bgImage='static/img/bridge-optimized.jpg'>
+          <Parallax bgImage='static/img/bridge-optimized-min.jpg'>
             <div className='block block-fill-height block-inverse block-transparent text-center'>
               <div className='welcome-text block-xs-middle'>
                 <h1 className='block-title'>{ contact.name }</h1>
