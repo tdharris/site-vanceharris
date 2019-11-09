@@ -16,19 +16,21 @@ export default class extends React.Component {
         <Head>
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <title>Vance Harris, M.D.</title>
-          <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'
-            integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossOrigin='anonymous' />
-          <link rel='stylesheet' type='text/css' href='static/lib/bootstrap-theme-toolkit/toolkit-startup.min.css' />
-          <link rel='stylesheet' type='text/css' href='static/css/global.css' />
+          <link
+            rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'
+            integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossOrigin='anonymous'
+          />
+          <link rel='stylesheet' type='text/css' href='lib/bootstrap-theme-toolkit/toolkit-startup.min.css' />
+          <link rel='stylesheet' type='text/css' href='css/global.css' />
         </Head>
         <div>
           <Navbar />
 
-          <Parallax bgImage='static/img/bridge-optimized-min.jpg'>
+          <Parallax bgImage='img/bridge-optimized.jpg'>
             <div className='block block-fill-height block-inverse block-transparent text-center'>
               <div className='welcome-text block-xs-middle'>
-                <h1 className='block-title'>{ contact.name }</h1>
-                <h4 className='text-muted'>{ contact.tagline }</h4>
+                <h1 className='block-title'>{contact.name}</h1>
+                <h4 className='text-muted'>{contact.tagline}</h4>
                 <br />
                 <Button bsSize='large' bsStyle='success' className='btn-transparent-outline'>
                   <i className='icon icon-phone' />
@@ -38,7 +40,7 @@ export default class extends React.Component {
             </div>
           </Parallax>
 
-          { this.props.children }
+          {this.props.children}
         </div>
         <style jsx>{styles}</style>
       </header>

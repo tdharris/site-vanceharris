@@ -3,8 +3,6 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 import contact from '../../data/contact'
 
-import styles from './styles'
-
 export default class extends React.Component {
   constructor (props) {
     super(props)
@@ -38,11 +36,10 @@ export default class extends React.Component {
               <NavItem eventKey={4} href='#contact'>Contact Us</NavItem>
               <NavItem eventKey={4} href={contact.download.url}>
                 <i className='glyphicon glyphicon-download-alt' /> New Patient
-                </NavItem>
+              </NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <style jsx>{styles}</style>
       </div>
     )
   }

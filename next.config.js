@@ -1,8 +1,8 @@
 module.exports = {
-  webpack: (config, { dev }) => {
+  webpack: (config, { defaultLoaders }) => {
     config.module.rules.push(
       {
-        test: /\.(css|scss|jpg|png|svg)/,
+        test: /\.(css|scss)/,
         loader: 'emit-file-loader',
         options: {
           name: 'dist/[path][name].[ext]'

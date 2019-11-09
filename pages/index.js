@@ -3,7 +3,6 @@
  */
 import React from 'react'
 import Layout from '../components/layout/layout'
-import styles from './styles'
 
 import About from '../components/blocks/about/about'
 import Contact from '../components/blocks/contact/contact'
@@ -44,7 +43,6 @@ const IndexPage = (props) => {
         </p>
       </Contact>
 
-      <style jsx>{styles}</style>
     </Layout>
   )
 }

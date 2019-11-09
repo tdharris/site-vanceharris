@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
 
-export default({children, id, blockClass, title, text, quote, imgUrl}) => (
+export default ({ children, id, blockClass, title, text, quote, imgUrl }) => (
   <div id={id} className={'block ' + (blockClass || '')}>
     <div className='container-small'>
       <h2 className='text-center'>{title}</h2>
@@ -20,7 +20,7 @@ export default({children, id, blockClass, title, text, quote, imgUrl}) => (
           </blockquote>
         </div>
 
-        { children }
+        {children}
       </div>
 
     </div>

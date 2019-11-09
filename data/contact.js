@@ -5,7 +5,7 @@ export default {
   address: {
     line1: '2632 Edith Ave, Suite B',
     line2: 'Redding, CA 96001',
-    image: '/static/img/location-map.jpg',
+    image: '/img/location-map.jpg',
     url: 'https://www.google.com/maps/place/2632+Edith+Ave+b,+Redding,+CA+96001/@40.571222,-122.4010157,17z/data=!3m1!4b1!4m5!3m4!1s0x54d2ecf7ce99c0df:0x1d14b397d3c2a957!8m2!3d40.571222!4d-122.398827'
   },
   phone: {
@@ -14,7 +14,7 @@ export default {
   },
   download: {
     title: 'New Patient Forms',
-    url: '/static/forms/Intake.pdf'
+    url: '/forms/Intake.pdf'
   },
   hours: {
     title: 'Hours of Operation',

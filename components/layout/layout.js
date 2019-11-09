@@ -23,7 +23,7 @@ export default class Layout extends React.Component {
     return (
       <div>
         <Header />
-        { this.props.children }
+        {this.props.children}
         <Footer />
       </div>
     )
