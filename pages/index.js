@@ -36,9 +36,7 @@ const IndexPage = (props) => {
         {...data.contact}
       >
         <p>
-          Dr. Harris is now taking new patients.
-          <br />He accepts Medicare and most insurance.
-          <br />We look forward to meeting you.
+          We are not taking new patients.
           <br /><br />
         </p>
       </Contact>
