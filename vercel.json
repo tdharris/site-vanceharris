@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "name": "site-vanceharris",
+    "alias": "vanceharris.com",
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "regions": ["sfo1"]
+}

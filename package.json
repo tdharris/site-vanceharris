@@ -8,7 +8,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy": "npm run test && now"
+    "deploy": "npm run test && vercel"
   },
   "keywords": [],
   "author": "Tyler Harris <tylerdavidharris@gmail.com>",
